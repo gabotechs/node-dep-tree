@@ -1,0 +1,24 @@
+{
+  "name": "node-dep-tree",
+  "version": "0.8.0",
+  "description": "dep-tree node wrapper",
+  "author": "Gabriel Musat",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.4",
+  "bin": {
+    "dep-tree": "bin/dep-tree"
+  },
+  "scripts": {
+    "postinstall": "node install.js",
+    "run": "esr src/main.ts",
+    "test": "mocha test/**/*.test.js"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "files": [
+    "bin",
+    "install.js"
+  ]
+}
