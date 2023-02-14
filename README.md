@@ -1,6 +1,6 @@
 # node-dep-tree
 
-Node wrapper for https://github.com/gabotechs/dep-tree.
+Node wrapper for [dep-tree](https://github.com/gabotechs/dep-tree).
 
 ## Install
 
