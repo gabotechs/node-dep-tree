@@ -1,5 +1,5 @@
 {
-  "name": "node-dep-tree",
+  "name": "@dep-tree/cli",
   "version": "0.8.0",
   "description": "dep-tree node wrapper",
   "author": "Gabriel Musat",

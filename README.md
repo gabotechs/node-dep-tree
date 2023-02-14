@@ -4,14 +4,14 @@ Node wrapper for https://github.com/gabotechs/dep-tree.
 
 ## Install
 
-Add `node-dep-tree` as a dev dependency.
+Add `@dep-tree/cli` as a dev dependency.
 
 ```shell
-yarn add -D node-dep-tree
+yarn add -D @dep-tree/cli
 ```
 or
 ```shell
-npm install --save-dev node-dep-tree
+npm install --save-dev @dep-tree/cli
 ```
 
 ## Usage
