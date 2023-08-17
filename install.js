@@ -13,12 +13,16 @@ const BIN_PATH = path.join(__dirname, "dep-tree")
 
 const archOs2Url = {
     'darwin': {
-        'x64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_Darwin_x86_64.tar.gz`,
-        'arm64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_Darwin_arm64.tar.gz`
+        'x64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_darwin_amd64.tar.gz`,
+        'arm64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_darwin_arm64.tar.gz`
     },
     'linux': {
-        'x64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_Linux_x86_64.tar.gz`,
-        'arm64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_Linux_arm64.tar.gz`
+        'x64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_linux_amd64.tar.gz`,
+        'arm64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_linux_arm64.tar.gz`
+    },
+    'windows': {
+        'x64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_windows_amd64.tar.gz`,
+        'arm64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_windows_arm64.tar.gz`
     }
 }
 
