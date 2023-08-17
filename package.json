@@ -2,7 +2,7 @@
   "name": "@dep-tree/cli",
   "version": "0.12.0",
   "description": "dep-tree node wrapper",
-  "author": "Gabriel Musat",
+  "author": "Gabriel Musat Mestre",
   "license": "MIT",
   "packageManager": "yarn@3.2.4",
   "bin": {
