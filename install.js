@@ -20,7 +20,7 @@ const archOs2Url = {
         'x64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_linux_amd64.tar.gz`,
         'arm64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_linux_arm64.tar.gz`
     },
-    'windows': {
+    'win32': {
         'x64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_windows_amd64.tar.gz`,
         'arm64': `https://github.com/gabotechs/dep-tree/releases/download/v${version}/dep-tree_${version}_windows_arm64.tar.gz`
     }
