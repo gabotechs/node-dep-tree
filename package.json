@@ -1,7 +1,7 @@
 {
   "name": "@dep-tree/cli",
   "version": "0.15.0",
-  "description": "dep-tree node wrapper",
+  "description": "dep-tree node wrapper ",
   "author": "Gabriel Musat Mestre",
   "license": "MIT",
   "packageManager": "yarn@3.2.4",
