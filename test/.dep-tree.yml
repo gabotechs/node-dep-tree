@@ -1,2 +1,3 @@
-entrypoints:
-  - dep-tree.test.js
+check:
+  entrypoints:
+    - dep-tree.test.js
