@@ -3,7 +3,7 @@ const zlib = require("zlib")
 const path = require("path")
 const fs = require("fs/promises")
 
-const operationSystem = process.platform
+const operatingSystem = process.platform
 const architecture = process.arch
 
 const packageJson = require('./package.json')
@@ -78,10 +78,10 @@ function extractFileFromTarGzip(buffer, subpath) {
 }
 
 async function install() {
-    const releasedTarUrl = archOs2Url[operationSystem]?.[architecture]
+    const releasedTarUrl = archOs2Url[operatingSystem]?.[architecture]
 
     if (releasedTarUrl === undefined) {
-        console.error(`${operationSystem}-${architecture} is not supported`)
+        console.error(`${operatingSystem}-${architecture} is not supported`)
         process.exit(1)
     }
 
