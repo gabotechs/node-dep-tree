@@ -15,4 +15,5 @@ jobs:
         run: |
           yarn install
           yarn postinstall
+          ls
           yarn test
