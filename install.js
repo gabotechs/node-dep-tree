@@ -87,7 +87,7 @@ async function install() {
 
     console.log("Downloading dep-tree release from", releasedTarUrl)
     let binBuffer = await fetch(releasedTarUrl)
-    binBuffer = extractFileFromTarGzip(binBuffer, "dep-tree")
+    binBuffer = extractFileFromTarGzip(binBuffer, operatingSystem === "win32" ? "dep-tree.exe" : "dep-tree")
     await fs.writeFile(BIN_PATH, binBuffer)
     await fs.chmod(BIN_PATH, 0o755);
 
