@@ -9,7 +9,10 @@ const architecture = process.arch
 const packageJson = require('./package.json')
 const version = packageJson.version
 
-const BIN_PATH = path.join(__dirname, "dep-tree")
+const suffix = process.platform === "win32" ? ".exe" : ""
+
+const BIN_PATH = path.join(__dirname, "dep-tree"+suffix)
+
 
 const archOs2Url = {
     'darwin': {
@@ -87,7 +90,7 @@ async function install() {
 
     console.log("Downloading dep-tree release from", releasedTarUrl)
     let binBuffer = await fetch(releasedTarUrl)
-    binBuffer = extractFileFromTarGzip(binBuffer, operatingSystem === "win32" ? "dep-tree.exe" : "dep-tree")
+    binBuffer = extractFileFromTarGzip(binBuffer, "dep-tree"+suffix)
     await fs.writeFile(BIN_PATH, binBuffer)
     await fs.chmod(BIN_PATH, 0o755);
 

@@ -3,9 +3,11 @@
 const childProcess = require('child_process')
 const path = require('path')
 
+const suffix = process.platform === "win32" ? ".exe" : ""
+
 try {
   childProcess.execFileSync(
-      path.join(__dirname, "..", "dep-tree"),
+      path.join(__dirname, "..", "dep-tree"+suffix),
       process.argv.slice(2),
     { stdio: "inherit" }
   );
