@@ -1,6 +1,6 @@
 {
   "name": "@dep-tree/cli",
-  "version": "0.22.0",
+  "version": "0.22.1",
   "description": "dep-tree node wrapper ",
   "author": "Gabriel Musat Mestre",
   "license": "MIT",
