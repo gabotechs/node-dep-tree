@@ -93,7 +93,7 @@ async function install() {
     binBuffer = extractFileFromTarGzip(binBuffer, "dep-tree"+suffix)
     await fs.writeFile(BIN_PATH, binBuffer)
     await fs.chmod(BIN_PATH, 0o755);
-
+    process.exit(0);
 }
 
 install().catch(err => {
